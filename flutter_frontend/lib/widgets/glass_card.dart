@@ -26,17 +26,17 @@ class GlassCard extends StatelessWidget {
       padding: padding ?? const EdgeInsets.all(16),
       decoration: BoxDecoration(
         borderRadius: borderRadius ?? BorderRadius.circular(16),
-        color: AppTheme.cyberDark.withOpacity(0.6),
+        color: AppTheme.cyberDark.withValues(alpha: 0.6),
         border: Border.all(
           color: glowEffect
-              ? AppTheme.cyberGreen.withOpacity(0.5)
-              : AppTheme.cyberGreen.withOpacity(0.2),
+              ? AppTheme.cyberGreen.withValues(alpha: 0.5)
+              : AppTheme.cyberGreen.withValues(alpha: 0.2),
           width: 1,
         ),
         boxShadow: glowEffect
             ? [
                 BoxShadow(
-                  color: AppTheme.cyberGreen.withOpacity(0.3),
+                  color: AppTheme.cyberGreen.withValues(alpha: 0.3),
                   blurRadius: 20,
                   spreadRadius: 2,
                 ),

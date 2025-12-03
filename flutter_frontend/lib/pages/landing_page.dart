@@ -52,13 +52,7 @@ class LandingPage extends StatelessWidget {
                                     color: Colors.white,
                                   ),
                                   children: [
-                                    const TextSpan(text: 'Fitter'),
-                                    TextSpan(
-                                      text: 'Coin',
-                                      style: TextStyle(
-                                        color: AppTheme.cyberGreen,
-                                      ),
-                                    ),
+                                    const TextSpan(text: 'Lofit'),
                                   ],
                                 ),
                               ),

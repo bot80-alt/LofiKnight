@@ -1,6 +1,6 @@
-# FitterCoin Flutter Frontend
+# Lofit Flutter Frontend
 
-Flutter frontend for the FitterCoin fitness challenge platform. This is a migration from the React frontend to Flutter.
+Flutter frontend for the Lofit fitness challenge platform. This is a migration from the React frontend to Flutter.
 
 ## Features
 

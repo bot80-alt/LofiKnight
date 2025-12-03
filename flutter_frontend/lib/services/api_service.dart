@@ -12,7 +12,7 @@ class ApiService {
 
   Future<Map<String, dynamic>> healthCheck() async {
     try {
-      final response = await http.get(Uri.parse('$baseUrl'));
+      final response = await http.get(Uri.parse(baseUrl));
       return json.decode(response.body) as Map<String, dynamic>;
     } catch (e) {
       return {'error': e.toString()};

@@ -32,7 +32,7 @@ class _AuthPageState extends State<AuthPage> {
     });
 
     try {
-      // TODO: Implement actual wallet connection (MetaMask, WalletConnect, etc.)
+      // Implement actual wallet connection (MetaMask, WalletConnect, etc.)
       // For now, simulate wallet connection
       await Future.delayed(const Duration(seconds: 1));
       
@@ -179,7 +179,7 @@ class _WalletConnectStep extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           Text(
-            'Connect your wallet to get started with FitterCoin',
+            'Connect your wallet to get started with Lofit',
             style: TextStyle(
               fontSize: 16,
               color: Colors.grey[300],
@@ -255,7 +255,7 @@ class _VerificationStep extends StatelessWidget {
               ),
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(12),
-                borderSide: BorderSide(color: AppTheme.cyberGreen.withOpacity(0.5)),
+                borderSide: BorderSide(color: AppTheme.cyberGreen.withValues(alpha: 0.5)),
               ),
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(12),
@@ -276,7 +276,7 @@ class _VerificationStep extends StatelessWidget {
               ),
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(12),
-                borderSide: BorderSide(color: AppTheme.cyberGreen.withOpacity(0.5)),
+                borderSide: BorderSide(color: AppTheme.cyberGreen.withValues(alpha: 0.5)),
               ),
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(12),
@@ -337,7 +337,7 @@ class _ProgressIndicator extends StatelessWidget {
               borderRadius: BorderRadius.circular(6),
               color: isCompleted || isActive
                   ? AppTheme.cyberGreen
-                  : AppTheme.cyberGreen.withOpacity(0.3),
+                  : AppTheme.cyberGreen.withValues(alpha: 0.3),
             ),
           );
         },

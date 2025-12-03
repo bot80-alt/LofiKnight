@@ -77,7 +77,7 @@ class ParticlePainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
-      ..color = AppTheme.cyberGreen.withOpacity(0.1)
+      ..color = AppTheme.cyberGreen.withValues(alpha: 0.1)
       ..strokeWidth = 1;
 
     for (var particle in particles) {

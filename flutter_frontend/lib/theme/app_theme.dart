@@ -18,12 +18,10 @@ class AppTheme {
         primary: cyberGreen,
         secondary: cyberGreen,
         surface: cyberDark,
-        background: cyberBlack,
         error: Colors.red,
         onPrimary: Colors.black,
         onSecondary: Colors.black,
         onSurface: Colors.white,
-        onBackground: Colors.white,
         onError: Colors.white,
       ),
       textTheme: TextTheme(

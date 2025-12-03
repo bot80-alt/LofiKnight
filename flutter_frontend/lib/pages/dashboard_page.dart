@@ -33,10 +33,10 @@ class _DashboardPageState extends State<DashboardPage> {
             duration: const Duration(milliseconds: 300),
             width: _isSidebarOpen ? 280 : 80,
             decoration: BoxDecoration(
-              color: AppTheme.cyberBlack.withOpacity(0.8),
+              color: AppTheme.cyberBlack.withValues(alpha: 0.8),
               border: Border(
                 right: BorderSide(
-                  color: AppTheme.cyberGreen.withOpacity(0.2),
+                  color: AppTheme.cyberGreen.withValues(alpha: 0.2),
                   width: 1,
                 ),
               ),
@@ -194,10 +194,10 @@ class _DashboardPageState extends State<DashboardPage> {
                 Container(
                   padding: const EdgeInsets.all(16),
                   decoration: BoxDecoration(
-                    color: AppTheme.cyberBlack.withOpacity(0.4),
+                    color: AppTheme.cyberBlack.withValues(alpha: 0.4),
                     border: Border(
                       bottom: BorderSide(
-                        color: AppTheme.cyberGreen.withOpacity(0.1),
+                        color: AppTheme.cyberGreen.withValues(alpha: 0.1),
                         width: 1,
                       ),
                     ),
@@ -343,7 +343,7 @@ class _NavItem extends StatelessWidget {
       margin: const EdgeInsets.only(bottom: 8),
       child: Material(
         color: isActive
-            ? AppTheme.cyberGreen.withOpacity(0.2)
+            ? AppTheme.cyberGreen.withValues(alpha: 0.2)
             : Colors.transparent,
         borderRadius: BorderRadius.circular(12),
         child: InkWell(

@@ -1,8 +1,6 @@
-# FitterCoin
+# LofiFit
 
-[Project Showcase](https://ethglobal.com/showcase/fittercoin-z3sup) | [Demo Video](https://ethglobal.storage/projects/z3sup/video/high.mp4?t=1759035678447)
-
-FitterCoin pays you to stay fit—earn crypto for your workouts. Built at ETHGlobal New Delhi, it combines AI, live contests, and optional betting to make fitness fun and rewarding.
+LofiFit pays you to stay fit—earn crypto for your workouts.It combines AI, live contests, and optional betting to make fitness fun and rewarding.
 
 ## Features
 

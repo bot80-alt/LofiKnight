@@ -59,15 +59,15 @@ class _NeonButtonState extends State<NeonButton>
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(12),
             border: Border.all(
-              color: AppTheme.cyberGreen.withOpacity(
-                widget.isLoading ? 0.5 : (_animation.value),
+              color: AppTheme.cyberGreen.withValues(
+                alpha: widget.isLoading ? 0.5 : (_animation.value),
               ),
               width: 2,
             ),
             boxShadow: [
               BoxShadow(
-                color: AppTheme.cyberGreen.withOpacity(
-                  widget.isLoading ? 0.2 : (_animation.value * 0.5),
+                color: AppTheme.cyberGreen.withValues(
+                  alpha: widget.isLoading ? 0.2 : (_animation.value * 0.5),
                 ),
                 blurRadius: 15,
                 spreadRadius: 2,
@@ -76,7 +76,7 @@ class _NeonButtonState extends State<NeonButton>
           ),
           child: Material(
             color: isPrimary
-                ? AppTheme.cyberGreen.withOpacity(0.1)
+                ? AppTheme.cyberGreen.withValues(alpha: 0.1)
                 : Colors.transparent,
             borderRadius: BorderRadius.circular(12),
             child: InkWell(

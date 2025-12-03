@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
+import 'services/admob_service.dart';
 import 'theme/app_theme.dart';
 import 'pages/landing_page.dart';
 import 'pages/auth_page.dart';
 import 'pages/dashboard_page.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  
+  // Initialize AdMob
+  await AdMobService().initialize();
+  
   runApp(const MyApp());
 }
 
@@ -14,7 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'FitterCoin',
+      title: 'Lofit',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.darkTheme,
       initialRoute: '/',
