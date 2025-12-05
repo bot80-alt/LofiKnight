@@ -1,6 +1,7 @@
-Flask
-numpy
-opencv-python
-pandas
-Werkzeug
+Flask==2.0.3
+numpy==1.23.5
+opencv-python==4.12.0.88
+pandas==1.5.3
+Werkzeug==2.2.3
 mediapipe
+gunicorn
