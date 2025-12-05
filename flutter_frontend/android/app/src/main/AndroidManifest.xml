@@ -1,6 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Internet permission required for API calls and AdMob -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
     <application
-        android:label="flutter_frontend"
+        android:label="Lofit"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
@@ -30,6 +33,13 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+        
+        <!-- AdMob App ID (REQUIRED for AdMob to work) -->
+        <!-- TODO: Replace with your actual AdMob App ID from AdMob console -->
+        <!-- Format: ca-app-pub-XXXXXXXXXXXXXXXX~YYYYYYYYYY -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
     </application>
     <!-- Required to query activities that can process text, see:
          https://developer.android.com/training/package-visibility and

@@ -1,6 +1,6 @@
 class AppConstants {
   // API Configuration
-  static const String apiBaseUrl = 'http://localhost:3001/api';
+  static const String apiBaseUrl = 'http://lofi-fit-s2ne.onrender.com/api';
   static const String contractAddress = '0xd43dc5f84320B34149Be4D0602F862DdD61A45CF';
   static const String rpcUrl = 'https://rpc.testnet.citrea.xyz';
   

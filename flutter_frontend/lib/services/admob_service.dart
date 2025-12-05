@@ -1,4 +1,5 @@
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:flutter/foundation.dart';
 import '../constants/app_constants.dart';
 
 class AdMobService {
@@ -11,8 +12,15 @@ class AdMobService {
   Future<void> initialize() async {
     if (_initialized) return;
 
-    await MobileAds.instance.initialize();
-    _initialized = true;
+    try {
+      await MobileAds.instance.initialize();
+      _initialized = true;
+    } catch (e) {
+      // AdMob may fail if App ID is not configured in AndroidManifest.xml/Info.plist
+      // This is OK - ads will simply not work until properly configured
+      debugPrint('AdMob initialization error: $e');
+      _initialized = false;
+    }
   }
 
   RewardedAd? _rewardedAd;
